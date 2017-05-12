@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Let's track these tasks against 3 point estimate",
+  "description": "Keeps track of tasks",
+  "version": "1.0",
+  "options_page": "options.html",
+
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+  	"default_title": "Let's keep track of the tasks"
+  },
+
+  "content_security_policy" : "default-src 'self'; connect-src 'self'; style-src 'self' https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css 'unsafe-inline'; font-src 'self' https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0 https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0; script-src 'self' https://cdn.plot.ly/plotly-1.2.0.min.js 'unsafe-eval'; object-src 'self'",
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://cdn.plot.ly/*",
+    "https://maxcdn.bootstrapcdn.com/font-awesome/*"
+  ]
+}

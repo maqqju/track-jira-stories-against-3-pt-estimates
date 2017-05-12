@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Keep track of tasks</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+		<link rel="stylesheet" href="options.css"></link>
+		<script src="jquery.min.js"></script>
+	</head>
+	<body>
+		<h1>Setup and track</h1>
+		<p>
+		<div>
+			<span>
+				Insert JIRA REST search url
+			</span>
+			<input type="text" id="jiraUrl" placeholder="https://my.jira.url/rest/api/latest/search"/>
+		</div>
+			
+		</p>
+		<div id="keys">
+			<div id="rows">
+			</div>
+			<div>
+				<a id="newrow" href><i class="fa fa-plus fa-2x"></i></a>
+			</div>
+		</div>
+		<p>
+			<button id="save">Save</button>
+		</p>
+		<p>
+			<div id="status"></div>
+		</p>
+
+		<script src="options.js"></script>	
+	</body>
+</html>
